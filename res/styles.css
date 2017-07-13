@@ -1,4 +1,4 @@
-@import  "//fonts.googleapis.com/css?family=Montserrat";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Roboto+Mono');
 
 html {
   height: 100%;
@@ -10,213 +10,82 @@ body {
   width: auto;
   height: auto;
   min-height: 100%;
-  font-family: "Montserrat",sans-serif;
-  line-height: 1.42857;
-  font-size: 17px;
-  background-color: rgba(0,0,0,1);
+  font-family: "Roboto",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #22272C;
   color: #FFF;
   word-wrap: normal;
+  background-image: url('background.svg');
 }
 
-a,a:visited,a:active,a:hover {
-  color: #FFF;
-  text-decoration: underline;
+h1 {
+  font-weight: 300;
+  font-size: 3.5em;
+}
+
+.geeky {
+  font-family: "Roboto Mono";
+}
+
+.cool {
+  color:#129EE6;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.white-text {
+  color: #fff;
 }
 
 section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: relative;
-}
-
-.bg-image {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  z-index: 0;
-}
-
-.form-horizontal .form-group {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.form-horizontal .btn {
-  display: block;
-  margin: 0 auto;
-}
-
-.user-signup__submit {
-  line-height: .5em;
-}
-
-.user-signup__form {
-  margin-left: -5px;
-}
-
-.user-signup__form-group {
-  padding: 0 0 0 5px;
-  position: relative;
-}
-
-@media all and (max-width: 767px) {
-  .form-horizontal .mt-table,.form-horizontal .mt-table--full,.form-horizontal .mt-table--centered,.form-horizontal .mt-table--full,.form-horizontal .mt-td--centered-vertical {
-    display: block;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .form-horizontal .user-signup__col-2 {
-    width: 1%;
-  }
-}
-
-.floating-signup__wrap {
-  position: fixed;
-  z-index: 5;
-  padding: 10px;
-}
-
-.floating-signup {
-  position: relative;
-  padding: 10px 20px;
-}
-
-.floaty-vertical--middle {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@media all and (max-width: 480px) {
-  .floaty-unfloat-at--xs.floating-signup__wrap {
-    position: static;
-    display: block;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    float: none;
-  }
-}
-
-.insert--image {
-  display: block;
-  position: relative;
-}
-
-.insert--image.wrap-off-align-center {
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.spacer {
-  z-index: 0;
-  width: 2.52px;
-  margin-bottom: -15px;
-  margin-top: -15px;
+section.hero {
+  padding: 5em;
 }
 
-.clean-hr {
-  z-index: 0;
-  width: 100%;
-  max-width: 579.5px;
-  margin-top: 28px;
-  margin-bottom: 28px;
+section.hero .message {
+  margin-top: 4em;
 }
 
-.m-lg-v {
-  margin-top: 30px;
-  margin-bottom: 30px;
+section.hero .message h1.heading {
+  margin: 0;
+  margin-top: 3em;
+  font-weight: 100;
 }
 
-.mt-table,.mt-table--full {
-  display: table;
+section.hero .message p {
+  font-size: 16px !important;
+  color: #aaa;
 }
 
-.mt-table--full {
-  width: 100%;
+section.prize {
+  padding: 3em;
+  background-color: #fff;
 }
 
-.mt-td,.mt-td--centered-vertical {
-  display: table-cell;
-}
-
-.mt-td--centered-vertical {
-  vertical-align: middle;
-}
-
-.loading-state {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background: url(/res/loading.gif) 50% 45% no-repeat;
-}
-
-.rel {
-  position: relative;
-}
-
-.bg-image {
-  /* photo from: https://www.pexels.com/photo/dawn-landscape-mountains-nature-1852/ */
-  background-image: url(/res/background.jpg);
-  background-attachment: scroll;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  opacity: .69;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-.form-control__input {
-  border-width: 0;
-  border-radius: 0;
-  font-size: 14px;
-  height: 50px;
-}
-
-.user-signup__submit {
-  border-width: 0;
-  border-radius: 0;
-  font-size: 14px;
-  padding-right: 20px;
-  padding-left: 20px;
-  height: 50px;
-  background-color: #00a651;
-  color: #FFF;
-}
-
-.user-signup__submit:hover {
-  background-color: #1cd861;
-  color: #FFF;
+.brand {
+  width: 200px;
 }
 
 @media all and (min-width:481px) {
-  p {
-    font-size: 22px;
-  }
 
-  h1 {
-    font-size: 60px;
-  }
 }
 
 @media all and (min-width:769px) {
-  p {
-    font-size: 22px;
-  }
 
-  h1 {
-    font-size: 75px;
-  }
 }

@@ -10,53 +10,52 @@
     <meta name="og:description" content="1st Thing In The Morning is a mobile app that is coming soon!" property="og:description">
     <meta name="og:image" content="" property="og:image">
     <link rel="icon" href="favicon.ico">
-    <link type="text/css" rel="stylesheet" href="./res/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="./res/styles.css">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+
   </head>
   <body>
-    <div class="bg-image"></div>
-    <div>
-      <div id="loading" class="loading-state" style="display: none;"></div>
-      <div>
-        <section>
-          <div class="floating-signup__wrap col-xs-12 col-md-6 col-xs-offset-0 col-md-offset-3 floaty-vertical--middle floaty-horizontal--center floaty-unfloat-at--xs">
-            <div class="floating-signup rel">
-              <div class="container-fluid rel">
-                <div class="row">
-                  <div class="user-signup__intro">
-                    <h1 style="text-align: center;">1st Thing In The Morning</h1>
-                    <p style="text-align: center;">
-                      <img src="./res/spacer.png" alt="" class="spacer insert--image wrap-off-align-center"><br>
-                    </p>
-                    <p style="text-align: center;">The daily dose of motivation you need to get things done, every morning.</p>
-                    <p style="text-align: center;">
-                      <img src="./res/clean-hr.png" alt="" class="clean-hr insert--image wrap-off-align-center">
-                      <span style="font-size: 14px;">Enter your email address to know when our app is ready!</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <form class="form form-horizontal user-signup__form" name="form" novalidate="" action="//lepsta.us16.list-manage.com/subscribe/post?u=a121ef3ead0d395e5e1bc1ffa&amp;id=731eac4a9f" method="POST">
-                    <div class="mt-table--full">
-                      <div class="mt-td--centered-vertical user-signup__col-1">
-                        <div class="user-signup__form-group m-lg-v form-group col-sm-12">
-                          <input type="email" name="EMAIL" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required">
-                        </div>        
-                      </div>
-                      <div class="mt-td--centered-vertical user-signup__col-2">
-                        <div class="user-signup__form-group m-lg-v form-group text-center">
-                          <button type="submit" class="btn btn-default submit user-signup__submit"><span>SUBMIT</span></button>
-                        </div>
-                      </div>
+        <section class="hero">
+          <div uk-grid>
+            <div class="uk-width-1-2">
+              <img class="brand" src="./res/logo-white.png" />
+              <div class="message">
+                <h1 class="heading white-text">Senior developers! Talk to us, and <span class="cool">WIN cool stuff!</span></h1>
+                <p>
+                  We have undertaken an ambitious task of improving how software developers collaborate on daily basis.
+                  So we'd like to get in touch with you for a short conversation to validate our assumptions.
+                  <br /><span class="white-text">Please leave us your email address so we can schedule a call with you.</span>
+                </p>
+                <form name="form" novalidate="" action="https://lepsta.us16.list-manage.com/subscribe/post?u=a121ef3ead0d395e5e1bc1ffa&amp;id=731eac4a9f" method="POST">
+                  <div uk-form-custom>
+                    <div class="uk-inline">
+                      <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                      <input class="uk-input" type="email" name="EMAIL" required="" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required" />
                     </div>
-                  </form>
-                </div>
+                    <button type="submit" class="uk-button uk-button-primary">Send</button>
+                  </div>
+                </form>
               </div>
+            </div>
+            <div class="uk-width-1-2">
+              <img src="./res/headphones-sketch.png" />
             </div>
           </div>
         </section>
-      </div>
-    </div>
+
+        <hr class="uk-divider">
+        <section class="prizse">
+
+        </section>
+
+        <section>
+
+
+
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="js/uikit.min.js"></script>
+            <script src="js/uikit-icons.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
