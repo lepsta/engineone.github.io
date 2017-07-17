@@ -2,6 +2,7 @@
 
 html {
   height: 100%;
+  background-color: #22272C;
 }
 
 body {
@@ -44,8 +45,20 @@ h1 {
   text-align: right;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 .white-text {
   color: #fff;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 section {
@@ -56,16 +69,20 @@ section {
 
 section.hero {
   padding: 5em;
+  padding-bottom: 0em;
 }
 
 section.hero .message {
   margin-top: 4em;
 }
 
-section.hero .message h1.heading {
+h1.heading {
+  font-weight: 100;
+}
+
+section.hero h1.heading {
   margin: 0;
   margin-top: 3em;
-  font-weight: 100;
 }
 
 section.hero .message p {
@@ -81,6 +98,23 @@ section.prize {
 .brand {
   width: 200px;
 }
+
+section.competition-details {
+  padding: 4em;
+  background-color: #fff;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100% !important;
+  color: #333;
+}
+
+section .container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 @media all and (min-width:481px) {
 
